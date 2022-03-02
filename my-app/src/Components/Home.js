@@ -10,7 +10,7 @@ const laptops=display?props.filter(item=>item[display]===id):props
         <div className="row">
             {laptops.map(item=>
                 <div className="col">
-                    <p>Model:<Link to={`/model/${item.id}`}>{item.model}</Link></p>
+                    <h1>Model:<Link to={`/model/${item.id}`}>{item.model}</Link></h1>
                     <p>Brand:<Link to={`/brand/${item.brand}`}>{item.brand}</Link></p>
                     <p>Ram:<Link to={`/ram/${item.ram}`}>{item.ram}</Link></p>
                     <p>HardDisk:<Link to={`/hardDisk/${item.hardDisk}`}>{item.hardDisk}</Link></p>
